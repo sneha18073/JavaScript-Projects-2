@@ -1,0 +1,45 @@
+html{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: crimson;
+}
+.inbox{
+    max-width: 300px;
+    margin: 50px auto;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 10px 10px 0 white transparent ;
+}
+.item{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 1px black;
+}
+.item:last-child{
+   border-bottom: 0;
+}
+
+/* This strikes out the text when the box is checked */
+input:checked + p {
+    background: #F9F9F9;
+    text-decoration: line-through;
+  }
+
+  
+  input[type="checkbox"] {
+    margin: 20px;
+  }
+
+  p {
+    margin: 0;
+    padding: 20px;
+    transition:  0.2s all;
+    flex: 1;
+    font-family: 'helvetica neue';
+    font-size: 20px;
+    font-weight: 200;
+    border-left: 1px solid #D1E2FF;
+  }
