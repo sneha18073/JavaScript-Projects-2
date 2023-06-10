@@ -1,94 +1,101 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+
+<head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
 
     <title>Video Player</title>
-  </head>
-  <body>
+</head>
+
+<body>
     <div class="container">
 
         <!-- The Video Player Container where the video is played along with some controls -->
-      <div class="video-player item1">
-        <div class="video-player-container">
-          <video src="videos/video1.mp4" id="video-play"></video>
+        <div class="video-player item1">
+            <div class="video-player-container">
+                <video src="videos/video1.mp4" id="video-play"></video>
 
-          <!-- Added Progress bar to control the timestamp of the video -->
-          <div class="video-progress-bar">
-            <input type="range" id="progress-bar" min="0" max="100" value="0" />
-          </div>
+                <!-- Added Progress bar to control the timestamp of the video -->
+                <div class="video-progress-bar">
+                    <input type="range" id="progress-bar" min="0" max="100" value="0" />
+                </div>
 
-          <!-- Video Palyer controllers -->
-          <div class="video-player-items">
-            <!-- Video Controllers than are responsible for controlling next, previous, play and pause -->
-            <div class="video-player-items-controller">
-                <button>
-                    <img
-                      src="icons/play-previous.svg"
-                      alt="Play-Previous"
-                      class="icon-img"
-                    />
-                  </button>
-                  <button>
-                    <img src="icons/play.svg" alt="Play" class="icon-img" />
-                  </button>
-                  <button>
-                    <img src="icons/pause.svg" alt="Pause" class="icon-img" />
-                  </button>
-                  <button>
-                    <img src="icons/play-next.svg" alt="Play-Next" class="icon-img" />
-                  </button>
-            </div>
+                <!-- Video Palyer controllers -->
+                <div class="video-player-items">
+                    <!-- Video Controllers than are responsible for controlling next, previous, play and pause -->
+                    <div class="video-player-items-controller">
+                        <button class="play-previous">
+                            <img src="icons/play-previous.svg" alt="Play-Previous" class="icon-img" />
+                        </button>
+                        <button class="play-pause">
+                            <img src="icons/play.svg" alt="Play" class="icon-img" />
+                        </button>
+                        <button class="play-next">
+                            <img src="icons/play-next.svg" alt="Play-Next" class="icon-img" />
+                        </button>
+                    </div>
 
-            <!-- Viedo controller responsible for the increment and decrement of sound -->
-            <div class="video-player-itmes-sound">
-                <button>
-                    <img src="icons/voulme.png" alt="Sound" class="icon-img" />
-                </button>
-                <input type="range" id="sound-bar" min="0" max="100" value="100" />
-            </div> 
+                    <!-- Viedo controller responsible for the increment and decrement of sound -->
+                    <div class="video-player-itmes-sound">
+                        <button class="video-sound-bar">
+                            <img src="icons/voulme.png" alt="Sound" class="icon-img" />
+                        </button>
+                        <input type="range" id="sound-bar" min="0" max="100" value="100" />
+                    </div>
 
-             <!--Setting where the speed of video is determined-->
-            <button>
-              <img src="icons/setting.svg" alt="Setting" class="icon-img" />
-            </button>
-          </div>
-        </div>
-        <h2>Play The Video and checkout some features and Play around</h2>
-      </div>
-      <!-- Video-Player Container ends -->
-
-
-      <!-- Container where the videos are aligned to play next -->
-      <div class="video-playlist">
-            <div class="video-playlist-container">
-                <div class="playlist-items">
-                    <video src="" class="display-video-items"></video>
-                    <h4>Video 1</h4>
-                    <h4>2:30</h4>
-
-                    <video src="" class="display-video-items"></video>
-                    <h4>Video 2</h4>
-                    <h4>2:30</h4>
-
-                    <video src="" class="display-video-items"></video>
-                    <h4>Video 2</h4>
-                    <h4>2:30</h4>
-
-                    <video src="" class="display-video-items"></video>
-                    <h4>Video 2</h4>
-                    <h4>2:30</h4>
+                    <!--Setting where the speed of video is determined-->
+                    <div class="video-player-items-speed">
+                        <button>
+                            <img src="icons/speedometer.png" alt="Setting" class="icon-img" />
+                        </button>
+                        <input type="range" id="speed-bar" min="1" max="5" value="1" />
+                    </div>     
                 </div>
             </div>
-      </div>
-      <!-- Video-Palylist ends -->
+            <h2>Play The Video and checkout some features and Play around</h2>
+        </div>
+        <!-- Video-Player Container ends -->
 
-<!-- Container ends -->
+
+        <!-- Container where the videos are aligned to play next -->
+        <div class="video-playlist">
+            <div class="video-playlist-container">
+                <div class="playlist-items">
+                    <div class="playlist-item-content">
+                        <video src="videos/video2.mp4" class="display-video-items"></video>
+                        <h4>Video </h4>
+                        <h4>2:30</h4>
+                    </div>
+
+                    <div class="playlist-item-content">
+                        <video src="videos/video3.mp4" class="display-video-items"></video>
+                        <h4>Video </h4>
+                        <h4>2:30</h4>
+                    </div>
+                    <div class="playlist-item-content">
+                        <video src="videos/video1.mp4" class="display-video-items"></video>
+                        <h4>Video </h4>
+                        <h4>2:30</h4>
+                    </div>
+
+                    <div class="playlist-item-content">
+                        <video src="videos/video2.mp4" class="display-video-items"></video>
+                        <h4>Video </h4>
+                        <h4>2:30</h4>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <!-- Video-Palylist ends -->
+
+        <!-- Container ends -->
     </div>
 
     <script src="index.js"></script>
-  </body>
+</body>
+
 </html>
