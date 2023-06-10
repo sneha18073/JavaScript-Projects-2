@@ -12,8 +12,9 @@ const updateProgressBar = () => {
     const duration = video.duration
     video.currentTime = (progress / 100) * duration
 
-    // To make the progressBar move along the timeline
 
+    // To make the progressBar move along the timeline
+        video.style.width = `{video.currentTime}%`
 }
 
 // Function to toggle Play-Pause button
